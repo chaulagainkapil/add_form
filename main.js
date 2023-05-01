@@ -2,11 +2,11 @@ var newRow = `
 <div class="form__row">
         <div class="form__name">
           <label for="name">Name </label>
-          <input type="text" name="name" placeholder="Enter your name" autocomplete="off" class="nameName" id="name0"/>
+          <input type="text" name="name" placeholder="Enter your name" autocomplete="off" class="nameName" id=""/>
         </div>
         <div class="form__number">
           <label for="number">Phone no. </label>
-          <input type="tel" name="number" placeholder="Enter your phone no." autocomplete="off" id="number0"/>
+          <input type="tel" name="number" placeholder="Enter your phone no." autocomplete="off" class="numberNumber" id=""/>
         </div>
         <div class="form__add">
             <button class="remove__button">Remove</button>
@@ -19,13 +19,9 @@ $(document).on("click", ".add__button", function () {
   console.log("add button");
   if (numItems <= 7) {
     // $(newRow.nameName).attr("id", "hello");
-    $(newRow).insertBefore(".form__submit");
+    $(newRow).insertBefore(".form__submit").find(".nameName").prop("id","name"+countId).end().find(".numberNumber").prop("id", "Number"+countId);
     $(".form__add").show("slow");
-
-    var $newDiv = $(".form .child").eq(countId);
-    $newDiv.attr("id", "countId");
-    // console.log($newDiv.id);
-    // countId++;
+    countId++;
   }
 });
 $(document).on("click", ".remove__button", function () {

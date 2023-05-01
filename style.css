@@ -57,6 +57,7 @@ body{
     background-color: hsl(158, 36%, 37%);
     color: hsl(0, 0%, 100%);
     border: none;
+    font-size: 16px;
     border-radius: 30px;
     width: 30%;
     text-align: center;

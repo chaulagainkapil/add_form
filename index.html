@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form">
+      <div class="form__row">
+        <div class="form__name">
+          <label for="name">Name </label>
+          <input type="text" name="name" placeholder="Enter your name" autocomplete="off" class="nameName" id="name0"/>
+        </div>
+        <div class="form__number">
+          <label for="number">Phone no. </label>
+          <input type="tel" name="number" placeholder="Enter your phone no." autocomplete="off" id="number0"/>
+        </div>
+        <div class="form__add">
+            <button class="remove__button">Remove</button>
+        </div>
+      </div>
+      <div class="form__submit">
+        <button>Submit</button>
+        <span class="add__button"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="24px" height="24px"><path fill="hsl(158, 36%, 37%)" d="M44,24c0,11-9,20-20,20S4,35,4,24S13,4,24,4S44,13,44,24z"/><path fill="#fff" d="M21,14h6v20h-6V14z"/><path fill="#fff" d="M14,21h20v6H14V21z"/></svg></span>
+      </div>
+    </div>
+    
+  </body>
+</html>

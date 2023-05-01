@@ -48,22 +48,23 @@ body{
 .form__submit{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     margin: 10px 0;
-    width: 30%;
+    width: 100%;
 }
 .form__submit button{
     background-color: hsl(158, 36%, 37%);
     color: hsl(0, 0%, 100%);
     border: none;
     border-radius: 30px;
-    width: 100%;
+    width: 30%;
     text-align: center;
     padding: 15px 15px;
     cursor: pointer;
 }
 .form__add button, .form__remove button{
-    background-color: #33ab5c;
+    background-color: #97233F;
     color: hsl(0, 0%, 100%);
     border: none;
     border-radius: 30px;
@@ -78,4 +79,15 @@ body{
 }
 .add__button{
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid #97233F;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+.add__button:hover{
+    background-color: #97233F;
+    border: 1px solid #97233F;
+    color: white;
 }

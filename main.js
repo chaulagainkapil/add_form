@@ -20,7 +20,7 @@ $(document).on("click", ".add__button", function () {
   if (numItems <= 7) {
     // $(newRow.nameName).attr("id", "hello");
     $(newRow).insertBefore(".form__submit");
-    $(".form__add").show("2500");
+    $(".form__add").show("slow");
 
     var $newDiv = $(".form .child").eq(countId);
     $newDiv.attr("id", "countId");
@@ -31,12 +31,11 @@ $(document).on("click", ".add__button", function () {
 $(document).on("click", ".remove__button", function () {
   let numItems = $(".form__row").length;
   console.log("remove button");
+  if (numItems <= 2){
+    $(".form__add").hide("slow");
+  }
   if (numItems > 1) {
     $(this).parent().parent().remove();
-    if (numItems <= 2){
-      $(".form__add").hide("2500");
     }
-
-  }
 
 });

@@ -32,11 +32,11 @@ $(document).on("click", ".remove__button", function () {
   let numItems = $(".form__row").length;
   console.log("remove button");
   if (numItems > 1) {
+    $(this).parent().parent().remove();
     if (numItems <= 2){
       $(".form__add").hide("2500");
     }
-    $(this).parent().parent().remove();
-    
+
   }
 
 });

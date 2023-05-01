@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: hsl(30, 38%, 92%);
+    background-color: #18122B;
     font-family: 'Montserrat', sans-serif;display: flex;
     align-items: center;
     justify-content: center;
@@ -16,19 +16,19 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 10px 0;
-    border: 0.5px solid lightgray;
+    background-color: #635985;
+    border-radius: 10px;
+    border: 0.5px solid #18122B;
 }
 .form__row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 0.5px solid lightgrey;
+    border-bottom: 0.5px solid #18122B;
 }
 .form__row>div{
-    border-right: 0.5px solid lightgray;
+    border-right: 0.5px solid #18122B;
     padding: 20px 10px;
 }
 .form__name label, .form__number label{
@@ -40,10 +40,12 @@ body{
     font-size: 18px;
     border-radius: 20px;
     padding: 8px;
-    border: 1px solid lightgray;
+    border: 1px solid #393053;
+    background-color: #443C68;
+    color: white;
 }
 .form__name input:hover, .form__number input:hover{
-    border: 1px solid hsl(158, 36%, 37%);
+    border: 1px solid #18122B;
 }
 .form__submit{
     display: flex;
@@ -53,7 +55,7 @@ body{
     width: 30%;
 }
 .form__submit button{
-    background-color: hsl(158, 36%, 37%);
+    background-color: #18122B;
     color: hsl(0, 0%, 100%);
     border: none;
     border-radius: 30px;
@@ -63,7 +65,7 @@ body{
     cursor: pointer;
 }
 .form__add button, .form__remove button{
-    background-color: #33ab5c;
+    background-color: #18122B;
     color: hsl(0, 0%, 100%);
     border: none;
     border-radius: 30px;

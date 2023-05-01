@@ -22,8 +22,8 @@ $(document).on("click", ".add__button", function () {
     $(newRow).insertBefore(".form__submit");
     $(".form__add").show("2500");
 
-    // var $newDiv = $(".form .child").eq(countId);
-    // $newDiv.attr("id", "countId");
+    var $newDiv = $(".form .child").eq(countId);
+    $newDiv.attr("id", "countId");
     // console.log($newDiv.id);
     // countId++;
   }

@@ -19,7 +19,13 @@ $(document).on("click", ".add__button", function () {
   console.log("add button");
   if (numItems <= 7) {
     // $(newRow.nameName).attr("id", "hello");
-    $(newRow).insertBefore(".form__submit").find(".nameName").prop("id","name"+countId).end().find(".numberNumber").prop("id", "Number"+countId);
+    $(newRow)
+      .insertBefore(".form__submit")
+      .find(".nameName")
+      .prop("id", "name" + countId)
+      .end()
+      .find(".numberNumber")
+      .prop("id", "Number" + countId);
     $(".form__add").show("slow");
     countId++;
   }
@@ -27,11 +33,10 @@ $(document).on("click", ".add__button", function () {
 $(document).on("click", ".remove__button", function () {
   let numItems = $(".form__row").length;
   console.log("remove button");
-  if (numItems <= 2){
+  if (numItems <= 2) {
     $(".form__add").hide("slow");
   }
   if (numItems > 1) {
     $(this).parent().parent().remove();
-    }
-
+  }
 });
